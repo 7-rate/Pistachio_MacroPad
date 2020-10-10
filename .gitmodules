@@ -1,0 +1,12 @@
+[submodule "kbd"]
+	path = kbd
+	url = https://github.com/7-rate/kbd.git
+[submodule "kicad_lib/kbd"]
+	path = kicad_lib/kbd
+	url = https://github.com/7-rate/kbd.git
+[submodule "Pistachio_MacroPad/kicad_lib/kbd"]
+	path = Pistachio_MacroPad/kicad_lib/kbd
+	url = https://github.com/7-rate/kbd.git
+[submodule "Pistachio_MacroPad/kicad_lib/kicad-footprints"]
+	path = Pistachio_MacroPad/kicad_lib/kicad-footprints
+	url = https://github.com/KiCad/kicad-footprints.git
