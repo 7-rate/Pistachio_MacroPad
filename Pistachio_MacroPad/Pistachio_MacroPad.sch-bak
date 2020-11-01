@@ -723,7 +723,7 @@ Wire Wire Line
 	2000 5150 2050 5150
 Text GLabel 2500 1850 2    50   Input ~ 0
 reset
-Text GLabel 2500 2250 2    50   Output ~ 0
+Text GLabel 2500 2550 2    50   Output ~ 0
 col0
 $Comp
 L power:VCC #PWR07
@@ -736,11 +736,11 @@ F 3 "" H 2500 1950 50  0001 C CNN
 	1    2500 1950
 	0    1    1    0   
 $EndComp
-Text GLabel 2500 2350 2    50   Output ~ 0
-col1
 Text GLabel 2500 2450 2    50   Output ~ 0
+col1
+Text GLabel 2500 2350 2    50   Output ~ 0
 col2
-Text GLabel 2500 2550 2    50   Output ~ 0
+Text GLabel 2500 2250 2    50   Output ~ 0
 col3
 Text GLabel 1100 2650 0    50   Input ~ 0
 row0
@@ -1090,4 +1090,75 @@ Text GLabel 7700 1950 2    50   Output ~ 0
 encA
 Text GLabel 7700 1250 2    50   Output ~ 0
 encB
+$Comp
+L Switch:SW_DIP_x01 SW20
+U 1 1 5F9AE7A9
+P 1500 6750
+F 0 "SW20" H 1500 7017 50  0000 C CNN
+F 1 "SW_DIP_x01" H 1500 6926 50  0000 C CNN
+F 2 "keyboard:SlideSwitch_IS-2245S-G" H 1500 6750 50  0001 C CNN
+F 3 "~" H 1500 6750 50  0001 C CNN
+	1    1500 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F9AFEEC
+P 950 7100
+F 0 "BT1" H 1068 7196 50  0000 L CNN
+F 1 "Battery_Cell" H 1068 7105 50  0000 L CNN
+F 2 "keyboard:BAT_HLD-001" V 950 7160 50  0001 C CNN
+F 3 "~" V 950 7160 50  0001 C CNN
+	1    950  7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5F9B0936
+P 2150 7000
+F 0 "J3" H 2230 6992 50  0000 L CNN
+F 1 "Conn_01x02" H 2230 6901 50  0000 L CNN
+F 2 "keyboard:POWER_PAD" H 2150 7000 50  0001 C CNN
+F 3 "~" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5F9B1993
+P 950 6750
+F 0 "#FLG03" H 950 6825 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 6923 50  0000 C CNN
+F 2 "" H 950 6750 50  0001 C CNN
+F 3 "~" H 950 6750 50  0001 C CNN
+	1    950  6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  6900 950  6750
+Wire Wire Line
+	950  6750 1200 6750
+Wire Wire Line
+	1800 6750 1950 6750
+Wire Wire Line
+	1950 6750 1950 7000
+Wire Wire Line
+	1950 7100 1950 7300
+Wire Wire Line
+	1950 7300 950  7300
+Wire Wire Line
+	950  7300 950  7200
+Connection ~ 950  6750
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5F9BA88A
+P 950 7300
+F 0 "#FLG04" H 950 7375 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 7473 50  0000 C CNN
+F 2 "" H 950 7300 50  0001 C CNN
+F 3 "~" H 950 7300 50  0001 C CNN
+	1    950  7300
+	-1   0    0    1   
+$EndComp
+Connection ~ 950  7300
 $EndSCHEMATC

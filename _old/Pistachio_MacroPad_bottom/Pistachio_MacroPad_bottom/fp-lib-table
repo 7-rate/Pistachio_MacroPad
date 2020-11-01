@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name kbd)(type KiCad)(uri C:/workspace/keyboard/Pistachio_MacroPad/Pistachio_MacroPad/kicad_lib/kbd/kbd.pretty)(options "")(descr ""))
+)
