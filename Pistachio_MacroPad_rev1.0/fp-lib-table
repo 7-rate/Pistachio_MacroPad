@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connectors_JST)(type Github)(uri https://github.com/7-rate/Connectors_JST.pretty)(options "")(descr ""))
+  (lib (name kbd)(type KiCad)(uri C:/workspace/keyboard/kicad_libs/kbd/kbd.pretty)(options "")(descr ""))
+)

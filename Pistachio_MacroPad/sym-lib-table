@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name keyboard)(type Legacy)(uri ${KIPRJMOD}/kicad_lib/kbd/library/kbd.lib)(options "")(descr ""))
-)
