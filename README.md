@@ -3,7 +3,7 @@
 [PistachioMacroPad](https://rates.booth.pm/items/2531312)の基板情報。
 
 ## 回路図
-回路図は[こちら](./schema.pdf)<br>
+回路図は[こちら](./Pistachio_MacroPad_rev1.0/schema.pdf)<br>
 必要な電子部品も上記から確認お願いします。
 
 ## 機械パーツ
